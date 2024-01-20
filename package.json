@@ -9,7 +9,7 @@
     "db:create:test": "set NODE_ENV=test&& npx sequelize-cli db:create",
     "pretest": "set NODE_ENV=test&& npx sequelize-cli db:drop && set NODE_ENV=test&& npx sequelize-cli db:create",
     "test": "set NODE_ENV=test&& jest --detectOpenHandles",
-    "prepare": "git init  && npx husky install .husky && sudo npx sequelize-cli db:migrate"
+    "prepare": "cd .. && npx husky install todo-app/.husky"
 
   },
   "author": "",
